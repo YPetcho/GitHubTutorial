@@ -36,7 +36,7 @@ namespace GitHubTestProject
         /// <param name="a">An integer array</param>
         public static void Sort(int[] a)
         {
-            // TODO: Complete fhe funtion
+            Array.Sort(a);
         }
 
         /// <summary>
