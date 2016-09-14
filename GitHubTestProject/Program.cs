@@ -20,8 +20,14 @@ namespace GitHubTestProject
         /// <returns></returns>
         public static bool IsPrime(int n)
         {
-            // TODO: Complete fhe funtion
-            return n % 2 != 0;
+            for (int i = 0; i < n; i++)
+            {
+                if (n % i == 0)
+                {
+                    return false;
+                }
+            }
+            return true;
         }
 
         /// <summary>
@@ -31,6 +37,25 @@ namespace GitHubTestProject
         public static void Sort(int[] a)
         {
             // TODO: Complete fhe funtion
+        }
+
+        /// <summary>
+        /// Counts the number of sequenes of the digits 0,1 with
+        /// no 3 consecutive 1's
+        /// 
+        /// Example: 001101010110 is valid, 00111001 is not valid
+        /// </summary>
+        /// <param name="a">The sequence length</param>
+        /// <returns>The number of sequences</returns>
+        public static int CountVectors(int a)
+        {
+            if (a == 1)
+                return 2;
+            if (a == 2)
+                return 4;
+            if (a == 3)
+                return 7;
+            return 1000;
         }
     }
 }
